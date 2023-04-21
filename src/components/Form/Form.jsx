@@ -42,6 +42,11 @@ export function InputForm() {
         number: number,
       })
     );
+    // const newContact = {
+    //   id: nanoid(),
+    //   name: name,
+    //   number: number,
+    // };
 
     setName('');
     setNumber('');

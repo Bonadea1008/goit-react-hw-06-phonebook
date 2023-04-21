@@ -7,7 +7,9 @@ export const ContactsList = () => {
   const filter = useSelector(filterValue);
   const contacts = useSelector(getContacts);
   const normalizedFilterValue = filter.toLowerCase();
-  
+  // console.log(contacts);
+  // console.log(filter);
+
   const filteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(normalizedFilterValue)
   );
@@ -24,4 +26,3 @@ export const ContactsList = () => {
     </ul>
   );
 };
-
